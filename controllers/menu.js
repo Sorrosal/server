@@ -7,7 +7,7 @@ async function createMenu(req, res) {
         if(error) {
             res.status(400).send({ msg:"Error al crear el menu" })
         } else {
-            res.status(200).send(menuStored);
+            res.status(201).send(menuStored);
         }
     });
 }
